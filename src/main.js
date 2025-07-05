@@ -8,16 +8,12 @@ function setTitle(text) {
     if (title) title.innerText = text
 }
 
-
 async function setStreamear(nick) {
-    // title
     setTitle(`inf. ${nick}`)
+    // todo: fetch twitch pfp. uuh, idk graphql
 
-    // image
     let image = document.getElementById("streamer")
     if (image) image.alt = nick
-
-    // todo: fetch twitch pfp. uuh, idk graphql
 }
 
 function init() {
@@ -26,8 +22,8 @@ function init() {
 
     function scrollUpdate() {
         let {scrollHeight} = document.body
-        console.log(scrollY)
         scrollHeight = Math.max(scrollY + innerHeight, scrollHeight)
+
         if (scrollY + innerHeight >= scrollHeight - SCROLL_TRESH_PX) {
             streamer.style.height = (scrollHeight) + "px"
         }
