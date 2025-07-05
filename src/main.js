@@ -26,7 +26,8 @@ function init() {
 
     function scrollUpdate() {
         let {scrollHeight} = document.body
-        scrollHeight = Math.max(innerHeight, scrollHeight)
+        console.log(scrollY)
+        scrollHeight = Math.max(scrollY + innerHeight, scrollHeight)
         if (scrollY + innerHeight >= scrollHeight - SCROLL_TRESH_PX) {
             streamer.style.height = (scrollHeight) + "px"
         }
