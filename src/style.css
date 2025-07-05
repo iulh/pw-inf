@@ -1,0 +1,36 @@
+body {
+    --gap-size: 16px
+}
+
+body {
+    margin: calc(var(--gap-size) * 2) auto;
+    max-width: 1096px;
+    line-height: 1.6;
+    font-size: 18px;
+    padding: 0 var(--gap-size);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+}
+
+body {
+    background-color: #232634;
+    color: #FFF;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container {
+    padding: var(--gap-size);
+    margin-bottom: var(--gap-size);
+    border-radius: 8px;
+    background-color: #303446;
+}
+
+#streamer {
+ width: 100%;
+}

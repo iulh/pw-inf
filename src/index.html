@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <span id="title">Header</span>
+    </div>
+    <div class="container">
+        <!-- ugly: hardcoded image -->
+        <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/5221d54c-3507-42cc-bea4-2832cd1300d7-profile_image-70x70.png" id="streamer">
+    </div>
+
+    <script src="/main.js"></script>
+    <script>
+        (async function() {
+            await setStreamear("pwgood")
+            init()
+        })()
+    </script>
+</body>
+</html>
