@@ -1,5 +1,6 @@
 body {
-    --gap-size: 16px
+    --gap-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
 }
 
 body {

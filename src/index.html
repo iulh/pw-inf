@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1, initial-scale=1.0">
+    
     <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <span id="title">Header</span>
+        <span id="title"></span>
     </div>
     <div class="container">
         <!-- ugly: hardcoded image -->
@@ -16,10 +18,7 @@
 
     <script src="/main.js"></script>
     <script>
-        (async function() {
-            await setStreamear("pwgood")
-            init()
-        })()
+        setStreamear("pwgood").then(init)
     </script>
 </body>
 </html>
